@@ -75,7 +75,7 @@ class Login extends React.Component{
         let id = document.getElementById("userId").value;
         let pass = document.getElementById("userPwd").value;
 
-        this.fetchCompanyInfo();
+        // this.fetchCompanyInfo();
 
         if(id.length === 0) {
             alert("아이디를 입력해 주세요");
