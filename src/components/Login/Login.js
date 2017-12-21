@@ -1,7 +1,8 @@
 import React from "react";
 import { InputGroup, InputGroupAddon, Input, Button, Buttons } from 'reactstrap';
 import Center from 'react-center';
-import FaPass from 'react-icons/lib/fa/expeditedssl';
+import FaId from 'react-icons/lib/md/contacts'
+import FaPass from 'react-icons/lib/md/lock';
 import styles from "./Login.css";
 
 class Login extends React.Component{
@@ -11,7 +12,7 @@ class Login extends React.Component{
     }
 
     _handleKeyPress = (e) => {
-        if (e.key === 'Enter')
+        if (e.key === "Enter")
             this.onLogin();
     };
 
@@ -22,9 +23,9 @@ class Login extends React.Component{
         };
 
         let boxStyle = {
-            height: 100,
-            width: 300,
-            marginTop: 300
+            height: "20%",
+            width: "40%",
+            marginTop: "20%"
         };
 
         return (
@@ -33,7 +34,7 @@ class Login extends React.Component{
                     <div style={boxStyle}>
                         <h1 style={{color: 'white'}}>PickleCode</h1>
                         <InputGroup>
-                            <InputGroupAddon>@</InputGroupAddon>
+                            <InputGroupAddon><FaId/></InputGroupAddon>
                             <Input placeholder="아이디" id="userId" onKeyPress={this._handleKeyPress}/>
                         </InputGroup>
                         <InputGroup>
@@ -53,7 +54,7 @@ class Login extends React.Component{
         );
     }
 
-    onLogin(){
+    onLogin = () => {
         let id = document.getElementById("userId").value;
         let pass = document.getElementById("userPwd").value;
 
@@ -68,7 +69,7 @@ class Login extends React.Component{
 
         alert("id: " + id + " pwd: " + pass);
         location.href="/home";
-    }
+    };
 }
 
 export default Login
