@@ -5,6 +5,9 @@ import FaId from 'react-icons/lib/md/contacts'
 import FaPass from 'react-icons/lib/md/lock';
 import styles from "./Login.css";
 
+
+import * as service from '../../svc/company';
+
 class Login extends React.Component{
     constructor(props){
         super(props);
@@ -14,6 +17,20 @@ class Login extends React.Component{
     _handleKeyPress = (e) => {
         if (e.key === "Enter")
             this.onLogin();
+    };
+
+    fetchCompanyInfo = async () => {
+        try{
+            const info = await Promise.all([
+                service.getCompanyList(),
+                service.getComments(1)
+            ]);
+
+            console.log(info[0]);
+        }
+        catch(exception){
+            console.log(exception);
+        }
     };
 
     render(){
@@ -57,6 +74,8 @@ class Login extends React.Component{
     onLogin = () => {
         let id = document.getElementById("userId").value;
         let pass = document.getElementById("userPwd").value;
+
+        this.fetchCompanyInfo();
 
         if(id.length === 0) {
             alert("아이디를 입력해 주세요");
