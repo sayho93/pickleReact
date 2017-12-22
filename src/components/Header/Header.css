@@ -1,8 +1,12 @@
+.wrapper{
+    height:100%;
+}
+
 .logo {
-    height: 3.5rem;
+    height: 3.0rem;
     background-color: #778899;
     width: 100vw;
-    line-height: 3.5rem;
+    line-height: 3.0rem;
     color: white;
     font-size: 1.5rem;
     font-weight: bold;

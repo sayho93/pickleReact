@@ -1,0 +1,25 @@
+.navArea{
+    background-color: #343a40;
+    display: inline-block;
+    color: #868e96;
+    font-size: 1rem;
+    line-height: 3.0rem;
+    width: 17%;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.navItem{
+    margin-left: 2%;
+}
+
+.navItem:hover {
+    color: white;
+    background-color: #495057;
+}
+
+.navItem:active, .menu-item.active {
+    background-color: #1862ab;
+}

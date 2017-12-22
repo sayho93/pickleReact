@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import LeftMenu from "../LeftMenu/LeftMenu";
 import {Badge} from "reactstrap";
 
 const MenuItem = ({active, children, to}) => (
@@ -38,41 +39,32 @@ class Header extends React.Component{
 
     render(){
         return (
-            <div>
+            <div className="wrapper">
                 <div className="logo">
                     pickleAdmin
                     <LoginStatus/>
                 </div>
-
-                <div className="menu">
-                    <MenuItem>회원관리</MenuItem>
-                    <MenuItem>게시물관리</MenuItem>
-                    <MenuItem>알림관리</MenuItem>
-                    <MenuItem>통계</MenuItem>
-                    <MenuItem>관리자계정</MenuItem>
-                </div>
+                <LeftMenu/>
             </div>
         );
     }
-}
-// const Header = () => {
-//     return (
-//         <div>
-//             <div className="logo">
-//                 pickleAdmin
-//                 <LoginStatus/>
-//             </div>
+
+// <div>
+// <div className="logo">
+// pickleAdmin
+// <LoginStatus/>
+// </div>
 //
-//             <div className="menu">
-//                 <MenuItem>회원관리</MenuItem>
-//                 <MenuItem>게시물관리</MenuItem>
-//                 <MenuItem>알림관리</MenuItem>
-//                 <MenuItem>통계</MenuItem>
-//                 <MenuItem>관리자계정</MenuItem>
-//             </div>
-//         </div>
-//     );
-// };
+// <div className="menu">
+// <MenuItem>회원관리</MenuItem>
+// <MenuItem>게시물관리</MenuItem>
+// <MenuItem>알림관리</MenuItem>
+// <MenuItem>통계</MenuItem>
+// <MenuItem>관리자계정</MenuItem>
+// </div>
+// </div>
+}
+
 
 export default Header;
 
