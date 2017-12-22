@@ -15,6 +15,11 @@
     margin-left: 2%;
 }
 
+.subItem{
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
 .navItem:hover {
     color: white;
     background-color: #495057;
