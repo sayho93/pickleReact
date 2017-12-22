@@ -1,19 +1,28 @@
 import React from "react";
 import "./Header.css";
 import LeftMenu from "../LeftMenu/LeftMenu";
-import {Badge} from "reactstrap";
+import {Button} from "reactstrap";
+import Auth from "../Login/Auth";
 
-const MenuItem = ({active, children, to}) => (
-    <div className="menu-item">
-        {children}
-    </div>
-);
+class LoginStatus extends React.Component{
+    constructor(props){
+        super(props);
+    }
 
-const LoginStatus = () => (
-    <div className="status">
-        <Badge color="danger">logout</Badge>
-    </div>
-);
+    render(){
+        Auth.signin();
+        if(Auth.isAuthenticated === false){
+            alert("로그인이 필요합니다.");
+            location.href = "/";
+        }
+
+        return (
+            <div className="status">
+                <Button color="danger" size="sm">Logout</Button>
+            </div>
+        );
+    }
+}
 
 class Header extends React.Component{
     componentWillMount(){
@@ -48,21 +57,6 @@ class Header extends React.Component{
             </div>
         );
     }
-
-// <div>
-// <div className="logo">
-// pickleAdmin
-// <LoginStatus/>
-// </div>
-//
-// <div className="menu">
-// <MenuItem>회원관리</MenuItem>
-// <MenuItem>게시물관리</MenuItem>
-// <MenuItem>알림관리</MenuItem>
-// <MenuItem>통계</MenuItem>
-// <MenuItem>관리자계정</MenuItem>
-// </div>
-// </div>
 }
 
 

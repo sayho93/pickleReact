@@ -12,11 +12,11 @@
 }
 
 .navItem{
-    margin-left: 2%;
+    padding-left: 2%;
 }
 
 .subItem{
-    margin-left: 10px;
+    padding-left: 10%;
     font-size: 0.8rem;
 }
 

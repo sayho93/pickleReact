@@ -16,6 +16,7 @@ class LeftMenu extends React.Component{
         super(props);
         this.toggle = this.toggle.bind(this);
         this.state = {
+            user: false,
             notice: false,
             statistics: false,
         };
@@ -26,14 +27,17 @@ class LeftMenu extends React.Component{
     // };
 
     toggle = (type) => {
-        // this.setState({{type}: !this.state.type});
         let typeString = type;
         switch(typeString){
+            case "user":
+                this.setState({user: !this.state.user});
+                break;
             case "notice":
                 this.setState({notice: !this.state.notice});
                 break;
             case "statistics":
                 this.setState({statistics: !this.state.statistics});
+                break;
         }
     };
 
@@ -41,7 +45,13 @@ class LeftMenu extends React.Component{
         return (
             <div className="navArea">
                 <Nav vertical  className="flex-column">
-                    <NavItem className="navItem"><IUser/> User Manage</NavItem>
+                    <NavItem className="navItem" onClick={() => this.toggle("user")}><IUser/> User Manage</NavItem>
+                    <Collapse isOpen={this.state.user}>
+                        <NavItem className="navItem subItem">Notice Menu1</NavItem>
+                        <NavItem className="navItem subItem">Notice Menu2</NavItem>
+                        <NavItem className="navItem subItem">Notice Menu3</NavItem>
+                    </Collapse>
+
                     <NavItem className="navItem" onClick={() => this.toggle("notice")}><INotice/> Notice Manage</NavItem>
                     <Collapse isOpen={this.state.notice}>
                         <NavItem className="navItem subItem">Notice Menu1</NavItem>
@@ -55,6 +65,7 @@ class LeftMenu extends React.Component{
                         <NavItem className="navItem subItem">Statistic Menu2</NavItem>
                         <NavItem className="navItem subItem">Statistic Menu3</NavItem>
                     </Collapse>
+
                     <NavItem className="navItem"><ISetting/> 관리자계정</NavItem>
                 </Nav>
             </div>

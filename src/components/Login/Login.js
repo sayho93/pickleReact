@@ -4,6 +4,8 @@ import Center from 'react-center';
 import FaId from 'react-icons/lib/md/contacts'
 import FaPass from 'react-icons/lib/md/lock';
 import styles from "./Login.css";
+import AlertContainer from 'react-alert'
+import Auth from "../Login/Auth";
 
 
 import * as service from '../../svc/company';
@@ -17,6 +19,23 @@ class Login extends React.Component{
     _handleKeyPress = (e) => {
         if (e.key === "Enter")
             this.onLogin();
+    };
+
+    alertOptions = {
+        offset: 14,
+        // position: 'bottom left',
+        position: 'top center',
+        theme: 'dark',
+        time: 4000,
+        transition: 'scale'
+    };
+
+    showAlert = (message, type) => {
+        this.msg.show(message, {
+            time: 2000,
+            type: type,
+            // icon: <img src="path/to/some/img/32x32.png" />
+        })
     };
 
     fetchCompanyInfo = async () => {
@@ -47,6 +66,7 @@ class Login extends React.Component{
 
         return (
             <div style={backgroundStyle}>
+                <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
                 <Center>
                     <div style={boxStyle}>
                         <h1 style={{color: 'white'}}>PickleCode</h1>
@@ -78,16 +98,21 @@ class Login extends React.Component{
         // this.fetchCompanyInfo();
 
         if(id.length === 0) {
-            alert("아이디를 입력해 주세요");
+            this.showAlert("아이디를 입력해 주세요", "error");
             return;
         }
         if(pass.length === 0) {
-            alert("비밀번호를 입력해 주세요");
+            this.showAlert("비밀번호를 입력해 주세요", "error");
             return;
         }
 
-        alert("id: " + id + " pwd: " + pass);
-        location.href="/home";
+        this.showAlert("id: " + id + " pwd: " + pass, "success");
+        Auth.signin();
+        store.set("userId", id);
+
+        setTimeout(function(){
+            location.href="/home";
+        }, 2000)
     };
 }
 

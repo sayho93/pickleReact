@@ -7,6 +7,8 @@ import App from "./components/App";
 import Home from "./components/Home";
 import NoMatch from "./components/NoMatch";
 
+import Auth from "./components/Login/Auth";
+
 const appElement = document.getElementById("app");
 
 ReactDOM.render(
