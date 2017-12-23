@@ -7,15 +7,21 @@ import App from "./components/App";
 import Home from "./components/Home";
 import NoMatch from "./components/NoMatch";
 
-import Auth from "./components/Login/Auth";
+import {createStore} from "redux";
+import {Provider} from "react-redux";
+import userApp from "./Reducers/Reducers";
 
+const store = createStore(userApp);
 const appElement = document.getElementById("app");
 
 ReactDOM.render(
-    <Router history={browserHistory}>
-        <Route path="/" component={App} />
-        <Route path="/home" component={Home}/>
-        <Route path="*" component={NoMatch}/>
-    </Router>,
+    <Provider store={store}>
+        <Router history={browserHistory}>
+            <Route path="/" component={App} />
+            <Route path="/home" component={Home}/>
+            <Route path="*" component={NoMatch}/>
+        </Router>
+    </Provider>
+    ,
     appElement
 );

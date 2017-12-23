@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import LeftMenu from "../LeftMenu/LeftMenu";
 import {Button} from "reactstrap";
-import Auth from "../Login/Auth";
+import {connect} from "react-redux";
 
 class LoginStatus extends React.Component{
     constructor(props){
@@ -10,11 +10,11 @@ class LoginStatus extends React.Component{
     }
 
     render(){
-        Auth.signin();
-        if(Auth.isAuthenticated === false){
-            alert("로그인이 필요합니다.");
-            location.href = "/";
-        }
+        // console.log(localStorage.getItem(value));
+        // if(Auth.isAuthenticated === false){
+        //     alert("로그인이 필요합니다.");
+        //     location.href = "/";
+        // }
 
         return (
             <div className="status">
@@ -59,7 +59,16 @@ class Header extends React.Component{
     }
 }
 
+const mapStateToProps = store => {
 
-export default Header;
+    console.log(store);
+    return {
+        userInfo: store.userInfo
+    }
+};
+
+// export default Header;
+
+export default connect(mapStateToProps)(Header);
 
 

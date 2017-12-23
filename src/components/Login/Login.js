@@ -5,7 +5,9 @@ import FaId from 'react-icons/lib/md/contacts'
 import FaPass from 'react-icons/lib/md/lock';
 import styles from "./Login.css";
 import AlertContainer from 'react-alert'
-import Auth from "../Login/Auth";
+
+import {connect} from "react-redux";
+import Action from "../../Actions/Actions";
 
 
 import * as service from '../../svc/company';
@@ -16,14 +18,15 @@ class Login extends React.Component{
         this.onLogin = this.onLogin.bind(this);
     }
 
+    //enter handling
     _handleKeyPress = (e) => {
         if (e.key === "Enter")
             this.onLogin();
     };
 
+    //custom alert
     alertOptions = {
         offset: 14,
-        // position: 'bottom left',
         position: 'top center',
         theme: 'dark',
         time: 4000,
@@ -38,6 +41,7 @@ class Login extends React.Component{
         })
     };
 
+    //api test code
     fetchCompanyInfo = async () => {
         try{
             const info = await Promise.all([
@@ -107,13 +111,25 @@ class Login extends React.Component{
         }
 
         this.showAlert("id: " + id + " pwd: " + pass, "success");
-        Auth.signin();
-        store.set("userId", id);
 
+        let userInfo = {
+            userId: "admin",
+            userName: "슈퍼관리자",
+            regDate: "2017-12-23"
+        };
+        console.log(this.props.dispatch(Action.setUserInfo(userInfo)));
         setTimeout(function(){
             location.href="/home";
         }, 2000)
     };
 }
 
-export default Login
+const mapStateToProps = store => {
+    return {
+        userInfo: store.userInfo
+    }
+};
+
+// export default Login
+
+export default connect(mapStateToProps)(Login)
