@@ -6,28 +6,41 @@ import {browserHistory} from "react-router";
 import {getCookie, deleteCookie} from "../../utils/utils";
 import AlertContainer from 'react-alert'
 
+// const userInfo = JSON.parse(getCookie("user"));
+
 class LoginStatus extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+            user : undefined
+        };
     }
 
-    componentDidMount(){
+    //마운트 전 쿠키 확인 및 state에 저장
+    componentWillMount(){
         let userInfo = getCookie("user");
-        console.log(userInfo);
-        if(typeof userInfo === "undefined"){
+
+        if(typeof userInfo === "undefined") {
             alert("로그인이 필요합니다");
             browserHistory.push("/");
+        }
+        else{
+            this.setState({
+                user: JSON.parse(userInfo)
+            });
         }
     }
 
     logout = () => {
         deleteCookie("user");
+        alert("로그아웃되었습니다");
+        browserHistory.push("/");
     };
 
     render(){
         return (
             <div className="status">
-                <Button color="danger" size="sm" onClick={this.logout}>Logout</Button>
+                {this.state.user ? this.state.user.userId : ""} <Button color="danger" size="sm" onClick={this.logout}>Logout</Button>
             </div>
         );
     }

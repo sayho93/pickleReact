@@ -114,7 +114,7 @@ class Login extends React.Component{
         this.showAlert("id: " + id + " pwd: " + pass, "success");
 
         let userInfo = {
-            userId: "admin",
+            userId: id,
             userName: "슈퍼관리자",
             regDate: "2017-12-23"
         };
