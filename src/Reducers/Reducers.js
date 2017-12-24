@@ -1,4 +1,4 @@
-import {SET_USER} from "../Actions/Actions";
+import {FETCH_USER, SET_USER} from "../Actions/Actions";
 import {combineReducers} from "redux";
 
 const userInitialState = {
@@ -13,7 +13,11 @@ const user = (state = userInitialState, action) => {
             userInitialState.value = action.value;
             return Object.assign({}, state, {
                 // value: state.value + state.diff
-                value: action.value
+                value: {$set: action.value}
+            });
+        case FETCH_USER:
+            return Object.assign({}, state, {
+
             });
         default:
             return state;

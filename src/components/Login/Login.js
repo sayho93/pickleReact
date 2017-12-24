@@ -1,16 +1,17 @@
 import React from "react";
 import { InputGroup, InputGroupAddon, Input, Button, Buttons } from 'reactstrap';
+import {browserHistory} from "react-router";
 import Center from 'react-center';
 import FaId from 'react-icons/lib/md/contacts'
 import FaPass from 'react-icons/lib/md/lock';
 import styles from "./Login.css";
 import AlertContainer from 'react-alert'
-
 import {connect} from "react-redux";
-import Action from "../../Actions/Actions";
+import {setUserInfo} from "../../Actions/Actions";
 
 
 import * as service from '../../svc/company';
+import {setCookie} from "../../utils/utils";
 
 class Login extends React.Component{
     constructor(props){
@@ -29,13 +30,13 @@ class Login extends React.Component{
         offset: 14,
         position: 'top center',
         theme: 'dark',
-        time: 4000,
+        time: 1000,
         transition: 'scale'
     };
 
     showAlert = (message, type) => {
         this.msg.show(message, {
-            time: 2000,
+            time: 1000,
             type: type,
             // icon: <img src="path/to/some/img/32x32.png" />
         })
@@ -117,16 +118,17 @@ class Login extends React.Component{
             userName: "슈퍼관리자",
             regDate: "2017-12-23"
         };
-        console.log(this.props.dispatch(Action.setUserInfo(userInfo)));
+        console.log(this.props.dispatch(setUserInfo(userInfo)));
+        setCookie("user", userInfo);
         setTimeout(function(){
-            location.href="/home";
-        }, 2000)
+            browserHistory.push("/home");
+        }, 1100)
     };
 }
 
-const mapStateToProps = store => {
+const mapStateToProps = (state) => {
     return {
-        userInfo: store.userInfo
+        userInfo: state.userInfo
     }
 };
 
