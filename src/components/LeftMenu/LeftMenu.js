@@ -22,13 +22,8 @@ class LeftMenu extends React.Component{
         };
     }
 
-    // toggle() {
-    //     this.setState({ collapse: !this.state.collapse });
-    // };
-
     toggle = (type) => {
-        let typeString = type;
-        switch(typeString){
+        switch(type){
             case "user":
                 this.setState({user: !this.state.user});
                 break;
@@ -47,7 +42,7 @@ class LeftMenu extends React.Component{
                 <Nav vertical  className="flex-column">
                     <NavItem className="navItem" onClick={() => this.toggle("user")}><IUser/> User Manage</NavItem>
                     <Collapse isOpen={this.state.user}>
-                        <NavItem className="navItem subItem">Notice Menu1</NavItem>
+                        <NavItem className="navItem subItem">User List</NavItem>
                         <NavItem className="navItem subItem">Notice Menu2</NavItem>
                         <NavItem className="navItem subItem">Notice Menu3</NavItem>
                     </Collapse>

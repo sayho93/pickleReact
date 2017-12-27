@@ -6,8 +6,6 @@ import {browserHistory} from "react-router";
 import {getCookie, deleteCookie} from "../../utils/utils";
 import AlertContainer from 'react-alert'
 
-// const userInfo = JSON.parse(getCookie("user"));
-
 class LoginStatus extends React.Component{
     constructor(props){
         super(props);
@@ -72,7 +70,6 @@ class Header extends React.Component{
                     pickleAdmin
                     <LoginStatus/>
                 </div>
-                <LeftMenu/>
             </div>
         );
     }
