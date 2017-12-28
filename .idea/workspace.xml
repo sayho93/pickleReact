@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a4e1692-4e29-4449-9d88-6fc0812139bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageNavigation/PageNav.js" afterPath="$PROJECT_DIR$/src/components/PageNavigation/PageNav.js" />
       <change beforePath="$PROJECT_DIR$/src/components/userMenu/UserInfo.js" afterPath="$PROJECT_DIR$/src/components/userMenu/UserInfo.js" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+              <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -33,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="531">
-              <caret line="83" column="37" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="83" selection-end-column="37" />
+              <caret line="83" column="37" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="83" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -43,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserList.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="542">
-              <caret line="36" column="11" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+              <caret line="36" column="11" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -86,8 +84,8 @@
       <file leaf-file-name="UserInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+            <state relative-caret-position="850">
+              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -99,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/svc/company.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,6 +123,7 @@
       <find>history</find>
       <find>Left</find>
       <find>;</find>
+      <find>companyInfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -284,12 +283,12 @@
       <workItem from="1513860590378" duration="2137000" />
       <workItem from="1513873327841" duration="669000" />
       <workItem from="1513941896966" duration="28642000" />
-      <workItem from="1514267405243" duration="22748000" />
+      <workItem from="1514267405243" duration="23266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63677000" />
+    <option name="totallyTimeSpent" value="64195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -715,7 +714,7 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -731,7 +730,7 @@
     <entry file="file://$PROJECT_DIR$/src/svc/company.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -739,7 +738,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
-          <caret line="36" column="11" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+          <caret line="36" column="11" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -749,7 +748,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
-          <caret line="83" column="37" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="83" selection-end-column="37" />
+          <caret line="83" column="37" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="83" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -774,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+        <state relative-caret-position="850">
+          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
