@@ -5,10 +5,9 @@ import Center from 'react-center';
 import FaId from 'react-icons/lib/md/contacts'
 import FaPass from 'react-icons/lib/md/lock';
 import styles from "./Login.css";
-import AlertContainer from 'react-alert'
+import AlertContainer from 'react-alert';
 import {connect} from "react-redux";
 import {setUserInfo} from "../../Actions/Actions";
-
 
 import * as service from '../../svc/company';
 import {setCookie} from "../../utils/utils";

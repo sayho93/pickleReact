@@ -3,8 +3,11 @@ import * as Constants from '../const/constants';
 
 const url = Constants.SERVER_URL;
 
-export function getCompanyList() {
-    return axios.get(url + "info/company");
+export function getCompanyList(page) {
+    if(page)
+        return axios.get(url + "info/company?page=" + page);
+    else
+        return axios.get(url + "info/company");
 }
 
 export function getCompanyInfo(companyId) {

@@ -1,7 +1,23 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#app{
+    height: 100%;
+    overflow: auto;
+}
+
 .bodyArea {
     margin-top: 0;
-    height: 20%;
+    /*height: 100%;*/
     width: 83%;
     float:right;
     display: inline-block;
+    overflow: auto;
+}
+
+.container {
+    background-color: gainsboro;
 }

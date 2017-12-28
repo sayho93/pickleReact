@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import App from "./components/App";
 
 import UserList from "./components/userMenu/UserList";
+import UserInfo from "./components/userMenu/UserInfo";
 import ManagerList from "./components/userMenu/ManagerList";
 import NoMatch from "./components/NoMatch";
 
@@ -23,9 +24,9 @@ ReactDOM.render(
             <Route path="/" component={Login} />
 
             <Route path="/user" component={App}>
-                <Route path="userList" component={UserList}>
-                    <Route path="userInfo" component={App}/>
-                </Route>
+                <Route path="userList" component={UserList}/>
+                <Route path="userList/:id" component={UserInfo}/>
+
 
                 <Route path="managerList" component={ManagerList}>
 

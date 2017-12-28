@@ -1,4 +1,5 @@
 .navArea{
+    float: left;
     background-color: #343a40;
     display: inline-block;
     color: #868e96;
