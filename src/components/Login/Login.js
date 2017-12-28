@@ -121,7 +121,7 @@ class Login extends React.Component{
         console.log(this.props.dispatch(setUserInfo(userInfo)));
         setCookie("user", userInfo);
         setTimeout(function(){
-            browserHistory.push("/home");
+            browserHistory.push("/user/userList");
         }, 1100)
     };
 }

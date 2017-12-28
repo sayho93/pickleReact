@@ -1,10 +1,11 @@
 import React from "react"
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import styles from "../globalStyle.css";
 
-class Main extends React.Component {
+class UserList extends React.Component {
     render() {
         return (
-            <div>
+            <div className="bodyArea">
                 <Breadcrumb>
                     <BreadcrumbItem>User Manage</BreadcrumbItem>
                     <BreadcrumbItem active>User List</BreadcrumbItem>
@@ -14,4 +15,4 @@ class Main extends React.Component {
     }
 }
 
-export default Main;
+export default UserList;

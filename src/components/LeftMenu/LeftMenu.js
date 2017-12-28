@@ -5,6 +5,7 @@ import {
     NavLink,
     Collapse
 } from "reactstrap";
+import {Link} from "react-router";
 import "./LeftMenu.css";
 import IUser from "react-icons/lib/ti/user";
 import INotice from "react-icons/lib/md/event-note";
@@ -42,9 +43,8 @@ class LeftMenu extends React.Component{
                 <Nav vertical  className="flex-column">
                     <NavItem className="navItem" onClick={() => this.toggle("user")}><IUser/> User Manage</NavItem>
                     <Collapse isOpen={this.state.user}>
-                        <NavItem className="navItem subItem">User List</NavItem>
-                        <NavItem className="navItem subItem">Notice Menu2</NavItem>
-                        <NavItem className="navItem subItem">Notice Menu3</NavItem>
+                        <Link to="/user/userList"><NavItem className="navItem subItem">User List</NavItem></Link>
+                        <Link to="/user/managerList"><NavItem className="navItem subItem">Manager List</NavItem></Link>
                     </Collapse>
 
                     <NavItem className="navItem" onClick={() => this.toggle("notice")}><INotice/> Notice Manage</NavItem>
