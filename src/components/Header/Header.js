@@ -18,6 +18,9 @@ class LoginStatus extends React.Component{
     componentWillMount(){
         let userInfo = getCookie("user");
 
+        console.log("userInfo::::::");
+        console.log(userInfo);
+
         if(typeof userInfo === "undefined") {
             alert("로그인이 필요합니다");
             browserHistory.push("/");
@@ -64,7 +67,7 @@ class Header extends React.Component{
 
     render(){
         return (
-            <div className="wrapper">
+            <div className="header">
                 <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
                 <div className="logo">
                     pickleAdmin

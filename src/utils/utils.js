@@ -7,10 +7,19 @@ export function formatPhone(string){
 }
 
 export function getCookie(name){
-    let value = ";" + document.cookie;
-    let parts = value.split(";" + name + "=");
-    if(parts.length === 2)
-        return decodeURIComponent(atob(parts.pop().split(";").shift()));
+    let value = document.cookie;
+    console.log(value);
+    let parts = value.split(name + "=");
+
+    let target = parts.pop().split(";");
+    console.log(target);
+
+    let returnVal = decodeURIComponent(atob(target));
+
+    console.log("retval:: " + returnVal);
+    // if(parts.length === 2)
+    //     return returnVal;
+    return returnVal;
 }
 
 export function setCookie(name, value){

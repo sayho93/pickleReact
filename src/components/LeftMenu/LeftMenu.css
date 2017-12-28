@@ -1,4 +1,7 @@
 .navArea{
+    position:fixed;
+    z-index: 1000;
+    margin-top: 3.0rem;
     float: left;
     background-color: #343a40;
     display: inline-block;
