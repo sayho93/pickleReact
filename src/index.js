@@ -28,10 +28,7 @@ ReactDOM.render(
                 <Route path="userList/:id" component={UserList}/>
                 <Route path="userInfo/:id" component={UserInfo}/>
 
-
-                <Route path="managerList" component={ManagerList}>
-
-                </Route>
+                <Route path="managerList" component={ManagerList}/>
             </Route>
 
 

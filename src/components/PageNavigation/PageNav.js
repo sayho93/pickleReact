@@ -17,12 +17,10 @@ const PageNav = ({url, currentPage, totalPage, pageBlock, pagePerBlock}) => {
             rows.push(<PaginationItem key={i} active><PaginationLink href={url + "/" + i}>{i}</PaginationLink></PaginationItem>);
         else
             rows.push(<PaginationItem key={i}><PaginationLink href={url + "/" + i}>{i}</PaginationLink></PaginationItem>);
-
     }
 
     if(totalPage > end)
         rows.push(<PaginationItem><PaginationLink next href={url + "/" + end + 1}/></PaginationItem>);
-
 
     return (
         <div className="pagination">
