@@ -11,7 +11,7 @@ class App extends React.Component{
             <div style={{height: '100%'}}>
                 <Header/>
                 <LeftMenu/>
-                {this.props.children};
+                {this.props.children}
             </div>
         )
     }

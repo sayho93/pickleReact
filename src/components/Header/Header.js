@@ -71,7 +71,7 @@ class Header extends React.Component{
                     <LoginStatus/>
                 </div>
             </div>
-        );
+        )
     }
 }
 

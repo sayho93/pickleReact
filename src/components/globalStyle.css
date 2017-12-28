@@ -21,3 +21,14 @@ html, body {
 .container {
     background-color: gainsboro;
 }
+
+.center{
+    margin: auto;
+    width: 50%;
+}
+
+.pagination{
+    margin-top: 2%;
+    margin-right: 50%;
+    float: right;
+}

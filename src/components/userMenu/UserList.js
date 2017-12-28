@@ -1,16 +1,19 @@
 import React from "react";
 import {browserHistory} from "react-router";
 import {Table} from 'reactstrap';
+import PageNav from "../PageNavigation/PageNav";
 import styles from "../globalStyle.css";
 import FaNum from "react-icons/lib/md/format-list-numbered";
 
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 
 import * as service from "../../svc/company";
+import {formatPhone} from "../../utils/utils";
 
 class UserList extends React.Component {
     constructor(props){
         super(props);
+        console.log(this.props.params.id);
         this.state = {
             list: null,
             pageInfo: null
@@ -19,7 +22,7 @@ class UserList extends React.Component {
     }
 
     componentWillMount(){
-        this.fetchCompanyList();
+        this.fetchCompanyList(this.props.params.id);
     }
 
     fetchCompanyList = async (page) => {
@@ -27,6 +30,7 @@ class UserList extends React.Component {
         const listData = list.data.data.list;
         const pageInfo = list.data.data.pageInfo;
 
+        console.log(pageInfo);
         this.setState({
             list: listData,
             pageInfo: pageInfo
@@ -34,8 +38,8 @@ class UserList extends React.Component {
     };
 
     listClickListener = (key) => {
-        alert("number " + key + " element clicked");
-        browserHistory.push("/user/userList/" + key);
+        // alert("number " + key + " element clicked");
+        browserHistory.push("/user/userInfo/" + key);
     };
 
     render() {
@@ -58,20 +62,23 @@ class UserList extends React.Component {
 
                         <tbody>
                         {this.state.list.map((info, rowNum) => {
-                            console.log(info);
-                            console.log(rowNum);
+                            // console.log(info);
+                            // console.log(rowNum);
                             return(
                                 <tr key={info.id} onClick={() => this.listClickListener(info.id)}>
                                     <th scope="row">{rowNum + 1}</th>
                                     <td>{info.name}</td>
-                                    <td>{info.phone}</td>
+                                    <td>{formatPhone(info.phone)}</td>
                                     <td>{info.corporateRN}</td>
-                                    <td>{info.uptDate}</td>
+                                    <td>{info.uptDate.substring(0, info.uptDate.length - 2)}</td>
                                 </tr>
                             )
                         })}
                         </tbody>
                     </Table>
+                    <PageNav url="/user/userList" currentPage={this.state.pageInfo.page} totalPage={this.state.pageInfo.totalPage}
+                        pageBlock={this.state.pageInfo.pageBlock} pagePerBlock={this.state.pageInfo.pagePerBlock}
+                    />
                 </div>
             )
         }
