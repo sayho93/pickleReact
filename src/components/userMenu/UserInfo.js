@@ -21,7 +21,9 @@ class UserInfo extends React.Component{
     }
 
     componentDidMount(){
-        this.fetchCompanyInfo(this.props.params.id);
+        this.fetchCompanyInfo(this.props.params.id).then(() => {
+            // Do something after fetchCompanyInfo is successful.
+        });
     }
 
     fetchCompanyInfo = async(id) => {
@@ -54,28 +56,28 @@ class UserInfo extends React.Component{
                     <BreadCrumb first={"User Manage"} second={"User Info"}/>
                     <InputGroup>
                         <InputGroupAddon>이름</InputGroupAddon>
-                        <Input placeholder="company name" name="name" value={this.state.name} onChange={this.onInputChange}/>
+                        <Input placeholder="회사 이름" name="name" value={this.state.name} onChange={this.onInputChange}/>
                     </InputGroup>
                     <br/>
                     <InputGroup>
                         <InputGroupAddon>전화번호</InputGroupAddon>
-                        <Input placeholder="company phone" name="phone" value={this.state.phone} onChange={this.onInputChange}/>
+                        <Input placeholder="전화번호" name="phone" value={this.state.phone} onChange={this.onInputChange}/>
                     </InputGroup>
                     <br/>
                     <InputGroup>
                         <InputGroupAddon>주소</InputGroupAddon>
-                        <Input placeholder="company location" value={this.state.sidoTxt + " " +  this.state.gunguTxt
+                        <Input value={this.state.sidoTxt + " " +  this.state.gunguTxt
                         } readOnly/>
                     </InputGroup>
                     <br/>
                     <InputGroup>
-                        <InputGroupAddon>주소</InputGroupAddon>
-                        <Input placeholder="company location" name="corporateRN" value={this.state.corporateRN} onChange={this.onInputChange}/>
+                        <InputGroupAddon>사업자등록번호</InputGroupAddon>
+                        <Input placeholder="사업자등록번호" name="corporateRN" value={this.state.corporateRN} onChange={this.onInputChange}/>
                     </InputGroup>
                     <br/>
                     <InputGroup>
                         <InputGroupAddon>등록일시</InputGroupAddon>
-                        <Input placeholder="company location" value={this.state.uptDate} readOnly/>
+                        <Input value={this.state.uptDate} readOnly/>
                     </InputGroup>
                 </div>
             )
