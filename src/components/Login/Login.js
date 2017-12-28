@@ -117,7 +117,7 @@ class Login extends React.Component{
             userName: "슈퍼관리자",
             regDate: "2017-12-23"
         };
-        console.log(this.props.dispatch(setUserInfo(userInfo)));
+        // console.log(this.props.dispatch(setUserInfo(userInfo)));
         setCookie("user", userInfo);
         setTimeout(function(){
             browserHistory.push("/user/userList");

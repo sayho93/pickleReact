@@ -11,14 +11,16 @@ export function getCookie(name){
     console.log(value);
     let parts = value.split(name + "=");
 
-    let target = parts.pop().split(";");
-    console.log(target);
-
-    let returnVal = decodeURIComponent(atob(target));
+    let returnVal = undefined;
 
     console.log("retval:: " + returnVal);
-    // if(parts.length === 2)
-    //     return returnVal;
+    if(parts.length === 2){
+        let target = parts.pop().split(";").shift();
+        console.log(target);
+
+        returnVal = decodeURIComponent(atob(target));
+    }
+
     return returnVal;
 }
 
@@ -32,5 +34,6 @@ export function deleteCookie(name){
 
     //어제 날짜를 쿠키 소멸 날짜로 설정한다.
     expireDate.setDate( expireDate.getDate() - 1 );
-    document.cookie = name + "= " + "; expires=" + expireDate.toUTCString() + "; path=/";
+    // document.cookie = name + "= " + "; expires=" + expireDate.toUTCString() + "; path=/";
+    document.cookie = name+'=; Max-Age=-99999999;';
 }
