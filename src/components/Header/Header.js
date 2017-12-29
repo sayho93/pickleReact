@@ -16,7 +16,7 @@ class LoginStatus extends React.Component{
 
     //마운트 전 쿠키 확인 및 state에 저장
     componentWillMount(){
-        let userInfo = getCookie("user");
+        let userInfo = getCookie("userInfo");
 
         console.log("userInfo::::::");
         console.log(userInfo);
@@ -33,7 +33,7 @@ class LoginStatus extends React.Component{
     }
 
     logout = () => {
-        deleteCookie("user");
+        deleteCookie("userInfo");
         alert("로그아웃되었습니다");
         browserHistory.push("/");
     };

@@ -15,6 +15,23 @@
     text-decoration: none;
 }
 
+.navArea-collapsed{
+    position:fixed;
+    z-index: 1000;
+    margin-top: 3.0rem;
+    float: left;
+    background-color: #343a40;
+    display: inline-block;
+    color: #868e96;
+    /*font-size: 1rem;*/
+    line-height: 3.0rem;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
 .navItem{
     padding-left: 2%;
     color: #868e96;

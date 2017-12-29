@@ -7,18 +7,18 @@ export function formatPhone(string){
 }
 
 export function getCookie(name){
-    let value = document.cookie;
+    let value = ";" + document.cookie;
     console.log(value);
-    let parts = value.split(name + "=");
+    let parts = value.split(";" + name + "=");
 
     let returnVal = undefined;
 
-    console.log("retval:: " + returnVal);
     if(parts.length === 2){
         let target = parts.pop().split(";").shift();
         console.log(target);
 
         returnVal = decodeURIComponent(atob(target));
+        console.log("retval:: " + returnVal);
     }
 
     return returnVal;
@@ -29,11 +29,10 @@ export function setCookie(name, value){
     console.log(JSON.stringify(value));
 }
 
-export function deleteCookie(name){
+export function deleteCookie(cookieName){
     let expireDate = new Date();
 
     //어제 날짜를 쿠키 소멸 날짜로 설정한다.
     expireDate.setDate( expireDate.getDate() - 1 );
-    // document.cookie = name + "= " + "; expires=" + expireDate.toUTCString() + "; path=/";
-    document.cookie = name+'=; Max-Age=-99999999;';
+    document.cookie = cookieName + "= " + "; expires=" + expireDate.toUTCString() + "; path=/";
 }

@@ -14,6 +14,11 @@ html, body {
     z-index: 1000;
 }
 
+.iconRight{
+    float: right;
+    margin-right: 5%;
+}
+
 .bodyArea {
     margin-top: 3.0rem;
     /*height: 100%;*/
