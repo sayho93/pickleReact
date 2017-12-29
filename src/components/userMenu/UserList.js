@@ -62,8 +62,6 @@ class UserList extends React.Component {
 
                         <tbody>
                         {this.state.list.map((info, rowNum) => {
-                            // console.log(info);
-                            // console.log(rowNum);
                             return(
                                 <tr className="listItem" key={info.id} onClick={() => this.listClickListener(info.id)}>
                                     <th scope="row">{rowNum + 1}</th>
