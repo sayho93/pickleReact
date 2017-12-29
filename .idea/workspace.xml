@@ -2,8 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a4e1692-4e29-4449-9d88-6fc0812139bb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/.hsdoc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/.npmignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/bower.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/component.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether-theme-arrows-dark.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether-theme-arrows-dark.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether-theme-arrows.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether-theme-arrows.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether-theme-basic.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether-theme-basic.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/css/tether.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/js/tether.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/dist/js/tether.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/1-Overview/1-why_you_should_use_tether.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/1-Overview/2-repositioning.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/1-Overview/3-why_we_dont_support_IE_8.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/2-Examples/1-list_of_examples.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/2-Examples/2-projects_using_tether.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/3-Advanced/1-embedding_tether.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/3-Advanced/2-extending_tether.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/coffee/intro.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/css/intro.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/intro.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/js/intro.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/js/markAttachment.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/sass/intro.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/browser-demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/coffee/welcome.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/css/browser-demo.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/css/prism.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/css/welcome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/js/drop.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/js/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/js/log.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/js/tether-v0.1.3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/js/welcome.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/sass/_inline-block.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/sass/browser-demo.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/docs/welcome/sass/welcome.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/chosen/chosen-sprite.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/chosen/chosen-sprite@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/chosen/chosen.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/chosen/chosen.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/chosen/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/common/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/content-visible/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/dolls/dolls.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/dolls/dolls.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/dolls/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/element-scroll/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/enable-disable/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/facebook/facebook.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/facebook/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/out-of-bounds/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/pin/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/resources/css/base.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/resources/js/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/resources/js/log.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/scroll/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/simple/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/testbed/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/tooltip/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/viewport/colors.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/examples/viewport/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/gulpfile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/karma.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/helpers/_tether-theme-arrows.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/helpers/_tether-theme-basic.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/helpers/_tether.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/mixins/_inline-block.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/mixins/_pie-clearfix.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/tether-theme-arrows-dark.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/tether-theme-arrows.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/tether-theme-basic.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/css/tether.sass" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/js/abutment.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/js/constraint.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/js/markAttachment.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/js/shift.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/js/tether.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/src/js/utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/test/js/tether.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap-tether/test/js/utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/reactstrap/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/LICENSE" afterPath="$PROJECT_DIR$/node_modules/reactstrap/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/README.md" afterPath="$PROJECT_DIR$/node_modules/reactstrap/README.md" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.cjs.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.cjs.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.cjs.js.map" afterPath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.cjs.js.map" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.es.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.es.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.es.js.map" afterPath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.es.js.map" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.min.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.min.js.map" afterPath="$PROJECT_DIR$/node_modules/reactstrap/dist/reactstrap.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Alert.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Alert.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Badge.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Badge.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Button.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Button.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Card.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Card.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/CardBlock.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/CardBlock.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/CardLink.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/CardLink.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Col.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Col.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Collapse.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Collapse.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Dropdown.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Dropdown.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/DropdownItem.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/DropdownItem.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/DropdownMenu.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/DropdownMenu.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/DropdownToggle.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/DropdownToggle.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Fade.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Fade.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Form.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Form.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/FormFeedback.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/FormFeedback.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/FormGroup.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/FormGroup.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/FormText.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/FormText.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Input.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Input.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Label.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Label.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Modal.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Modal.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/ModalHeader.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/ModalHeader.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Nav.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Nav.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavDropdown.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavDropdown.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavItem.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavItem.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavLink.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavLink.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Navbar.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Navbar.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavbarToggler.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/NavbarToggler.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/PaginationLink.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/PaginationLink.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Popover.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Popover.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/PopoverContent.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/PopoverContent.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/PopoverTitle.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/PopoverTitle.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/TetherContent.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Tooltip.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/Uncontrolled.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/Uncontrolled.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/index.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/reactstrap/lib/utils.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/reactstrap/package.json" afterPath="$PROJECT_DIR$/node_modules/reactstrap/package.json" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/src/components/userMenu/UserInfo.js" afterPath="$PROJECT_DIR$/src/components/userMenu/UserInfo.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/userMenu/UserList.js" afterPath="$PROJECT_DIR$/src/components/userMenu/UserList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +160,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserList.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+              <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -30,7 +169,7 @@
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1623">
+            <state relative-caret-position="1887">
               <caret line="123" column="16" lean-forward="false" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
               <folding />
             </state>
@@ -40,7 +179,7 @@
       <file leaf-file-name="LeftMenu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LeftMenu/LeftMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="238">
               <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -65,7 +204,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/globalStyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="633">
-              <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+              <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -74,7 +213,7 @@
       <file leaf-file-name="LeftMenu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LeftMenu/LeftMenu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="544">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
@@ -84,11 +223,31 @@
       <file leaf-file-name="UserInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="103" column="103" lean-forward="false" selection-start-line="103" selection-start-column="103" selection-end-line="103" selection-end-column="103" />
+            <state relative-caret-position="2261">
+              <caret line="133" column="120" lean-forward="false" selection-start-line="133" selection-start-column="120" selection-end-line="133" selection-end-column="120" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,7 +364,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,11 +376,18 @@
               <item name="pickleAdmin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pickleAdmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickleAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,12 +439,13 @@
       <workItem from="1514267405243" duration="23688000" />
       <workItem from="1514466556685" duration="3321000" />
       <workItem from="1514471426186" duration="290000" />
-      <workItem from="1514539804698" duration="6156000" />
+      <workItem from="1514539804698" duration="6199000" />
+      <workItem from="1514586325580" duration="2901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75339000" />
+    <option name="totallyTimeSpent" value="78283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -351,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -366,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -405,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -421,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -481,14 +636,6 @@
     <entry file="file://$PROJECT_DIR$/src/Actions/Actions.js" />
     <entry file="file://$PROJECT_DIR$/src/Reducers/Reducers.js" />
     <entry file="file://$PROJECT_DIR$/src/components/userMenu/Main.css" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/testApp.js" />
     <entry file="file://$PROJECT_DIR$/src/components/userMenu/RouterEx1.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Body/Body.js" />
@@ -528,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Login/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1623">
+        <state relative-caret-position="1887">
           <caret line="123" column="16" lean-forward="false" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
           <folding />
         </state>
@@ -592,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LeftMenu/LeftMenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
@@ -608,17 +751,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/globalStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LeftMenu/LeftMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="238">
           <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -629,15 +764,39 @@
     <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/globalStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/userMenu/UserInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="103" column="103" lean-forward="false" selection-start-line="103" selection-start-column="103" selection-end-line="103" selection-end-column="103" />
+        <state relative-caret-position="2261">
+          <caret line="133" column="120" lean-forward="false" selection-start-line="133" selection-start-column="120" selection-end-line="133" selection-end-column="120" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

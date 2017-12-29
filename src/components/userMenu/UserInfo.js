@@ -1,9 +1,38 @@
 import React from "react";
 import {browserHistory} from "react-router";
-import { InputGroup, InputGroupAddon, Input, Label, Card, CardImg } from 'reactstrap';
+import { InputGroup, InputGroupAddon, Input, Label, Tooltip, Button } from 'reactstrap';
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import * as service from "../../svc/company";
 import {formatPhone} from "../../utils/utils";
+
+class TooltipContent extends React.Component{
+    constructor(props) {
+        super(props);
+
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            src: "",
+            tooltipOpen: false
+        };
+    }
+
+    toggle() {
+        this.setState({
+            tooltipOpen: !this.state.tooltipOpen
+        });
+    }
+
+    render() {
+        return (
+            <div style={{marginLeft: '3%'}}>
+                <a href="#" className="mr-1" color="secondary" id={'Tooltip-' + this.props.id}>미리보기</a>
+                <Tooltip placement="right" isOpen={this.state.tooltipOpen} target={'Tooltip-' + this.props.id} toggle={this.toggle}>
+                    <img src={this.props.info} style={{width: "100%", height: "100%"}}/>
+                </Tooltip>
+            </div>
+        );
+    }
+}
 
 class UserInfo extends React.Component{
     constructor(props){
@@ -16,6 +45,7 @@ class UserInfo extends React.Component{
                 corporateRN: "",
                 uptDate: "",
                 file: "",
+                src: "",
         };
         this.fetchCompanyInfo = this.fetchCompanyInfo.bind(this);
         this.onInputChange = this.onInputChange.bind(this);
@@ -59,14 +89,17 @@ class UserInfo extends React.Component{
         });
 
         let fileReader = new FileReader();
+        const scope = this;
         fileReader.readAsDataURL(file);
-        fileReader.onload = function(e) {
-            // console.log(e.target.result); // ArrayBuffer 객체
-            document.getElementById("preview").src = e.target.result;
+        fileReader.onload = function(e){
+            scope.setState({src: e.target.result});
         };
     }
 
+
+
     render() {
+        console.log(this.state);
         // if(this.state.companyInfo.name !== ""){
             return (
                 <div className="bodyArea">
@@ -99,10 +132,7 @@ class UserInfo extends React.Component{
                     <br/>
                     <Label for="file" sm={2}>File</Label>
                     <Input type="file" name="file" id="file" style={{marginLeft: '10px'}} onChange={this.onFileChange}/>
-
-                    <Card>
-                        <img id="preview" src="" alt="Card image cap" style={{width:'30%', height:'30%'}} />
-                    </Card>
+                    <TooltipContent id="tooltip" info={this.state.src}/>
                 </div>
             )
         // }
