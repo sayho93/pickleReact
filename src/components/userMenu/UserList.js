@@ -65,7 +65,7 @@ class UserList extends React.Component {
                             // console.log(info);
                             // console.log(rowNum);
                             return(
-                                <tr key={info.id} onClick={() => this.listClickListener(info.id)}>
+                                <tr className="listItem" key={info.id} onClick={() => this.listClickListener(info.id)}>
                                     <th scope="row">{rowNum + 1}</th>
                                     <td>{info.name}</td>
                                     <td>{formatPhone(info.phone)}</td>

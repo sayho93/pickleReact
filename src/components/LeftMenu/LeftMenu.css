@@ -10,7 +10,6 @@
     line-height: 3.0rem;
     width: 17%;
     height: 100%;
-    cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: none;
 }
@@ -35,6 +34,7 @@
 .navItem{
     padding-left: 2%;
     color: #868e96;
+    cursor: pointer;
 }
 
 .subItem{

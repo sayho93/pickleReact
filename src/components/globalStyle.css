@@ -22,6 +22,7 @@ html, body {
 .bodyArea {
     margin-top: 3.0rem;
     /*height: 100%;*/
+    left: 0;
     width: 83%;
     float:right;
     display: inline-block;
@@ -35,6 +36,10 @@ html, body {
 .center{
     margin: auto;
     width: 50%;
+}
+
+.listItem {
+    cursor: pointer;
 }
 
 .pagination{
